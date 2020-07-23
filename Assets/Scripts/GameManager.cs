@@ -160,10 +160,10 @@ public class GameManager : MonoBehaviour {
 					scoreAmounts.Add(pos, pos.GetComponent<TargetBehavior>().scoreAmount);
 				}
 			}
-			foreach(GameObject pos in positiveTargets) {
-				pos.GetComponent<TargetBehavior>().scoreAmount++;
-			}
 			multiplier++;
+			foreach(GameObject pos in positiveTargets) {
+				pos.GetComponent<TargetBehavior>().scoreAmount = scoreAmounts[pos] * multiplier;
+			}
 			multiplierText.text = multiplier.ToString() + "x";
 		}
 	}
