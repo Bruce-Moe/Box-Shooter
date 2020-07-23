@@ -161,9 +161,9 @@ public class GameManager : MonoBehaviour {
 				}
 			}
 			foreach(GameObject pos in positiveTargets) {
-				pos.GetComponent<TargetBehavior>().scoreAmount *= 2;
+				pos.GetComponent<TargetBehavior>().scoreAmount++;
 			}
-			multiplier *= 2;
+			multiplier++;
 			multiplierText.text = multiplier.ToString() + "x";
 		}
 	}
