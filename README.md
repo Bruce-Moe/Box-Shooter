@@ -3,7 +3,7 @@ My Box Shooter Game inspired from Michigan State's Coursera Game Dev Course
 To run the game:  
 1. Download and extract the project file
 2. Go to the Builds->WebGL folder
-3. Run the index.html file in a browser that supports Unity, such as Firefox. You may need to change browser settings to allow Unity.  
+3. Run the index.html file in a browser that supports Unity, such as Firefox. You may need to change browser settings to allow Unity. 
 Rules:  
 - To beat level 1, score 50 points. To beat level 2, score 1000 points.  
 - Shooting green cubes gives 5 points.  
