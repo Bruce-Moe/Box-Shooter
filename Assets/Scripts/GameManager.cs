@@ -42,7 +42,7 @@ public class GameManager : MonoBehaviour {
 
 	private float currentTime;
 	private float gameTime;
-	private float endTime = -1f;
+	private float endTime = -1000000000;
 	private float multiplierTime = 5f;
 
 	// setup the game
@@ -107,8 +107,8 @@ public class GameManager : MonoBehaviour {
 			playAgainButtons.SetActive (true);
 
 		// reduce the pitch of the background music, if it is set 
-		if (musicAudioSource)
-			musicAudioSource.pitch = 0.5f; // slow down the music
+		//if (musicAudioSource)
+			//musicAudioSource.pitch = 0.5f; // slow down the music
 	}
 	
 	void BeatLevel() {
@@ -128,8 +128,8 @@ public class GameManager : MonoBehaviour {
 			nextLevelButtons.SetActive (true);
 		
 		// reduce the pitch of the background music, if it is set 
-		if (musicAudioSource)
-			musicAudioSource.pitch = 0.5f; // slow down the music
+		//if (musicAudioSource)
+			//musicAudioSource.pitch = 0.5f; // slow down the music
 	}
 
 	// public function that can be called to update the score or time
@@ -176,7 +176,8 @@ public class GameManager : MonoBehaviour {
 				pos.GetComponent<TargetBehavior>().scoreAmount = scoreAmounts[pos];
 		}
 		multiplier = 1;
-		multiplierText.text = multiplier.ToString() + "x";
+		if(multiplierText)
+			multiplierText.text = multiplier.ToString() + "x";
 	}
 
 	// public function that can be called to restart the game

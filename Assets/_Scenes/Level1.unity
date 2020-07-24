@@ -1676,7 +1676,7 @@ MonoBehaviour:
   score: 0
   multiplier: 1
   canBeatLevel: 1
-  beatLevelScore: 50
+  beatLevelScore: 100
   startTime: 15
   mainScoreDisplay: {fileID: 481521739}
   mainTimerDisplay: {fileID: 1763789919}
@@ -2631,6 +2631,16 @@ PrefabInstance:
     - target: {fileID: 1686231054497800587, guid: b00b28510a711ab4c9c0dc1fc4ac4d4f,
         type: 3}
       propertyPath: Loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1686231054497800587, guid: b00b28510a711ab4c9c0dc1fc4ac4d4f,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: bdf1cceac4153024480ffec757d1d165, type: 3}
+    - target: {fileID: 1686231054497800587, guid: b00b28510a711ab4c9c0dc1fc4ac4d4f,
+        type: 3}
+      propertyPath: m_Pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7636020953736142220, guid: b00b28510a711ab4c9c0dc1fc4ac4d4f,
